@@ -1,3 +1,9 @@
+# Stomble engineering task
+
+Head to server folder and run "node server.js" before running npm start
+
+### ``
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

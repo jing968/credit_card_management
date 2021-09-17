@@ -50,7 +50,6 @@ class Home extends Component{
                 
                 <div id='display' className='cards_display'>
                     {this.build_card_display()}
-                    <Mini_card  id='5' number='1231231231' month='DEC' year ='22' toggleRender=''/>
                     <Link to={'/new'} className='new_card'>
                         <img Style='width: 150px; height: 150px; margin: auto' src={require('../imgs/add.png').default}/>
                     </Link>
