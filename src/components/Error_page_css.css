@@ -1,0 +1,12 @@
+.error_form{
+    margin: 250px auto;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    width: 550px;
+    height: 500px;
+    border-radius: 20px;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

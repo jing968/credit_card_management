@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Card_Form from './components/Card_Form';
+import Card_Form_edit from './components/Card_Form_edit';
+import Home from './components/Home';
+import Error_page from './components/Error_page'
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route exact path="/">
+        <Redirect to="/home" />
+      </Route>
+      <Route exact path='/updated' component={Home} />
+      <Route exact path='/added' component={Home} />
+      <Route exact path='/home' component={Home} />
+      <Route exact path='/retry' component={Card_Form} />
+      <Route path='/new' component={Card_Form} />
+      <Route path='/edit=:id' component={Card_Form_edit} />
+      <Route component={Error_page} />
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 

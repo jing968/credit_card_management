@@ -1,0 +1,60 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.top_banner{
+    background-color: white;
+    width: 103%;
+    height: 70px;
+    padding-top: 10px;
+
+}
+
+.heading{
+    margin-top: 1%;
+    font-size: 50px;
+    font-style: bold;
+    color: rgb(179, 197, 228);
+
+}
+
+.heading:hover{
+    color: rgb(204, 160, 160);
+}
+
+.cards_display{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid white;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.new_card{
+    display: flex;
+    position: relative;
+    left: 100px;
+    margin-top: 10px;
+    margin-right: 50px;
+    height: 240px;
+    width: 330px;
+    border: 1px none transparent;
+    border-radius: 5px;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.new_card:hover,
+.new_card.hover{
+    transition: 1s;
+    transform: rotateY(360deg);
+}
+
