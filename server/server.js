@@ -159,10 +159,10 @@ app.post('/add_new_card',(req,res)=>{
 
           console.log('Added successfully');
         });   
-        res.redirect('http://localhost:3000/added');
+        res.redirect('http://18.218.241.66/added');
       }else{
         console.log('Card number already in db');
-        res.redirect('http://localhost:3000/retry');
+        res.redirect('http://18.218.241.66/retry');
       }
 
     })
@@ -170,7 +170,7 @@ app.post('/add_new_card',(req,res)=>{
   }else{
     console.log('Unvalid details');
 
-    res.redirect('http://localhost:3000/retry');
+    res.redirect('http://18.218.241.66/retry');
   }
 
 
@@ -253,10 +253,10 @@ app.post('/update',(req,res)=>{
 
     console.log('Updated')
 
-    res.redirect('http://localhost:3000/updated');
+    res.redirect('http://18.218.241.66/updated');
   }else{
     console.log('Failed to update, nothing was changed')
-    res.redirect('http://localhost:3000/edit=3');
+    res.redirect('http://18.218.241.66/edit=3');
   }
 })
 
