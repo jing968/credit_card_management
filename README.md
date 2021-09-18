@@ -1,8 +1,9 @@
 # Stomble engineering task
 
-Head to server folder and run "node server.js" before running npm start
 
-### ``
+Running backend "cd server; node server.js" 
+Running frontend in developetment mode "npm start"
+
 
 # Getting Started with Create React App
 

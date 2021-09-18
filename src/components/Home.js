@@ -12,7 +12,7 @@ class Home extends Component{
     // fetching cards info from get_cards end point
     fetch_info(){
         let children = [];
-        fetch('http://localhost:3001/get_cards/').then(res => res.json()).then(data => {
+        fetch('http://18.218.241.66/server/get_cards/').then(res => res.json()).then(data => {
             if(!this._loaded_cards){
                 for(let i = 0; i <data.length;i ++){
                     children.push(

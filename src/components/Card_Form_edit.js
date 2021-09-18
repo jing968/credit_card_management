@@ -40,7 +40,7 @@ class Card_Form_edit extends Component{
     // fetching details for a given a card to fill out the form
     fetch_info(){
         var id = this.props.match.params.id
-        fetch(`http://localhost:3001/lookup=${id}`).then(res => res.json() ).then(data => {
+        fetch(`http://18.218.241.66/server/lookup=${id}`).then(res => res.json() ).then(data => {
             if(!this._loaded_info){
                 if(data.no_match) {
                     throw Error('#2 - Not a valid card')
@@ -131,7 +131,7 @@ class Card_Form_edit extends Component{
 
                 </div>
 
-                <motion.form  action='http://localhost:3001/update'   method='POST' className='form'
+                <motion.form  action='http://18.218.241.66/server/update'   method='POST' className='form'
                     initial = {{ opacity: 0, y: 300, scale: 0.1}}
                     animate = {{ opacity: 1, y: 0 , scale: 1}}
                     transition = {{ duration: 1}}

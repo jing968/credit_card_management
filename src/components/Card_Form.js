@@ -79,7 +79,7 @@ class Card_Form extends Component{
 
                 </div>
 
-                <motion.form action='http://localhost:3001/add_new_card' method='POST' className='form'
+                <motion.form action='http://18.218.241.66/server/add_new_card' method='POST' className='form'
                     initial = {{ opacity: 0, y: -300, scale: 0.1}}
                     animate = {{ opacity: 1, y: 0 , scale: 1}}
                     transition = {{ duration: 1}}

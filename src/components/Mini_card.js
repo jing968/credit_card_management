@@ -18,7 +18,7 @@ class Mini_card extends Component{
             >
                 <img className='remove' src={require('../imgs/remove.png').default}  onClick={() => {
                     if(window.confirm('Are you sure you want to remove this credit card')){
-                        fetch(`http://localhost:3001/delete=${this.props.id}`).then(res => res.json()).then(data => console.log(data));
+                        fetch(`http://18.218.241.66/server/delete=${this.props.id}`).then(res => res.json()).then(data => console.log(data));
                         { var item = document.getElementById(`${this.props.id}`); item.parentNode.removeChild(item) ; alert('Successfully removed the chosen card')}      
                     }
                 }} />
